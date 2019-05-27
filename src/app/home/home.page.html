@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center">
+      <h1>Nicholas Brinkmann</h1>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding" style="text-align: center">
+    <ion-avatar class="avatar">
+      <img src="https://i.boring.host/15G7acWX.png">
+    </ion-avatar>
+    A South African from Johannesburg. Currently a student at Harvard University.
+  </div>
+
+  <div class="ion-padding">
+    <h2>Personal Interests</h2>
+    
+    <ion-chip>
+      <ion-avatar>
+        <img src="assets/icon/chess.ico" />
+      </ion-avatar>
+      <ion-label>Chess</ion-label>
+    </ion-chip>
+
+    <ion-chip>
+      <ion-icon name="flower"></ion-icon>
+      <ion-label>Nature Walks</ion-label>
+    </ion-chip>
+
+    <ion-chip>
+      <ion-avatar>
+          <img src="assets/icon/med.jpg" />
+      </ion-avatar>
+      <ion-label>Meditation</ion-label>
+    </ion-chip>
+
+    <ion-chip>
+        <ion-avatar>
+            <img src="assets/icon/pi.png" />
+        </ion-avatar>
+        <ion-label>Math & Science</ion-label>
+      </ion-chip>
+  </div>
+
+  <ion-list>
+      <ion-item>
+        <ion-label>Firstname</ion-label>
+        Nicholas
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Lastname</ion-label>
+        Brinkmann
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Nationalities</ion-label>
+          South Africa, United States of America
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Primary Education</ion-label>
+          St John's College, Johannesburg
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Github Username</ion-label>
+        nickbrinkmann
+      </ion-item>
+      
+      <ion-item>
+        <ion-label>Date of Birth</ion-label>
+        <ion-datetime
+          disabled
+          displayFormat="MM/DD/YYYY"
+          [(ngModel)]="myDateOfBirth"
+        ></ion-datetime>
+      </ion-item>
+
+  </ion-list>
+
+  <ion-button (click)="presentAlert()">Press Me</ion-button>
+
+</ion-content>
