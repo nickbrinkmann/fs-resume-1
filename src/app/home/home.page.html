@@ -46,12 +46,12 @@
 
   <ion-list>
       <ion-item>
-        <ion-label>Firstname</ion-label>
+        <ion-label>First Name</ion-label>
         Nicholas
       </ion-item>
 
       <ion-item>
-        <ion-label>Lastname</ion-label>
+        <ion-label>Surname</ion-label>
         Brinkmann
       </ion-item>
 
@@ -72,15 +72,11 @@
       
       <ion-item>
         <ion-label>Date of Birth</ion-label>
-        <ion-datetime
-          disabled
-          displayFormat="MM/DD/YYYY"
-          [(ngModel)]="myDateOfBirth"
-        ></ion-datetime>
+        19 January 1999
       </ion-item>
 
   </ion-list>
 
-  <ion-button (click)="presentAlert()">Press Me</ion-button>
+  <ion-button (click)="presentAlert()">Contact Me</ion-button>
 
 </ion-content>

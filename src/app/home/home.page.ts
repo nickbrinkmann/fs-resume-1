@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AlertController } from '@ionic/angular';
+import { AlertController, IonDatetime } from '@ionic/angular';
 
 
 @Component({
@@ -19,10 +19,10 @@ export class HomePage {
 
   async presentAlert() {
     const alert = await this.alertController.create({
-      header: 'Oooops!',
-      subHeader: 'You silly boy.',
-      message: 'You have downloaded a virus!',
-      buttons: ['I am such a silly boy.']
+      header: 'Contact Details',
+      subHeader: '',
+      message: 'Email: nick.brinkmann4@gmail.com',
+      buttons: ['Close.']
     });
 
     await alert.present();
