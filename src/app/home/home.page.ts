@@ -9,10 +9,10 @@ import { AlertController } from '@ionic/angular';
 })
 
 export class HomePage {
+  
   public myDateOfBirth: String;
-
   ionViewDidEnter() {
-  this.myDateOfBirth = "01-19-1999";
+    this.myDateOfBirth = "01-19-1999";
   }
 
   constructor(public alertController: AlertController) {}
